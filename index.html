@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>D2Lib</title>
+    <link href="css/title.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/message.css" rel="stylesheet">
+    <link href="css/codeblock.css" rel="stylesheet">
+    <link href="css/categories.css" rel="stylesheet">
+    <link href="img/icon.svg" rel="icon">
+    <script src="js/navbar.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/codeblock.js"></script>
+    <script src="js/anchor.js"></script>
+    <script src="js/slogan.js"></script>
+</head>
+<body>
+<div>
+    <div id="message">
+        <div class="inner">msg<a class="close-btn" onclick="hideMsg()">
+            <svg fill="none" height="16" id="close-svg" stroke="#e6e6e6" stroke-linecap="round"
+                 stroke-linejoin="round" stroke-width="4" viewBox="0 0 24 24" width="16"
+                 xmlns="http://www.w3.org/2000/svg">
+                <line x1="18" x2="6" y1="6" y2="18"></line>
+                <line x1="6" x2="18" y1="6" y2="18"></line>
+            </svg>
+        </a></div>
+    </div>
+    <ul class="menu" id="nav">
+        <li class="nojs"><a class="nojs">
+            <noscript>JavaScript not loaded</noscript>
+        </a></li>
+        <li class="toc-btn"><a class="toc-btn" id="toc-btn" onclick="toc()"> &#9654; </a></li>
+        <li class="icon"><a><img alt="icon" height="40" src="img/icon.svg" width="40"></a></li>
+        <li class="iconText"><a class="iconText">D2Lib</a></li>
+        <li class="menu"><a class="menu" href="index.html">Home</a></li>
+    </ul>
+</div>
+<div class="toc" id="toc">
+    <div class="toc-collapse"></div>
+</div>
+<div class="box" id="scroll" onscroll="scrollControl()">
+    <header class="title">
+        <h1>D2Lib</h1>
+        <div><small>Programs that are </small><small id="slogan"></small></div>
+    </header>
+    <div class="container" id="contents">
+        <div>
+            <!-- start -->
+            <h1>Projects</h1>
+            <hr>
+            <div class="projects-block" onclick="window.location.href = 'https://project.d2lib.space/';">
+                <img alt="d2lib_icon" height="100" src="img/icon.svg" width="100">
+                <h2 style="text-align: left">D2Lib</h2>
+                <p>A lightweight tool to host your documents</p>
+            </div>
+            <div class="projects-block" onclick="window.location.href = 'https://project.old.d2lib.space';">
+                <img alt="d2lib_legacy_icon" height="100" src="img/d2lib_legacy_icon.svg" width="100">
+                <h2 style="text-align: left;">D2Lib Legacy</h2><br>
+                <p>Host your documents with the power of Python</p>
+            </div>
+            <div class="projects-block" onclick="window.location.href = 'https://aerophine.d2lib.com';">
+                <img alt="aerophine_icon" height="100" src="img/aerophine_icon.svg" width="100">
+                <h2 style="text-align: left;">Aerophine</h2><br>
+                <p>Modern website design</p>
+            </div>
+
+            <hr>
+            <br>
+
+            <h1>Members</h1>
+            <div class="members-block" onclick="window.location.href = 'https://github.com/ArthurZhou';">
+                <img alt="ArthurZhou_avatar" height="100" src="img/ArthurZhou_avatar.png" width="100">
+                <h2 style="text-align: left;">ArthurZhou</h2><br>
+                <p>The ultimate shit maker</p>
+            </div>
+
+            <hr>
+            <br>
+
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto: contact@d2lib.com">contact@d2lib.com</a></p>
+            <br>
+            <p>Website: <a href="https://d2lib.com">d2lib.com</a></p>
+            <!-- end -->
+        </div>
+        <div class="footer">
+            <br>
+            <hr>
+            <div style="text-align: center"><small>Made by D2Lib with love. <br>Template: <a
+                    href="https://aerophine.d2lib.com">Aerophine</a></small></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
